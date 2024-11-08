@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event-Event Agama Kristen</title>
+    <style>
+        body {
+            font-family: 'Georgia';
+            background: linear-gradient(to right, #5c5b59, #ffffff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Menyembunyikan scrollbar horizontal */
+            overflow-y: auto;   /* Menampilkan scrollbar vertikal */
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            cursor: pointer;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+        .card h3 {
+            margin: 0;
+            padding: 10px 0;
+        }
+        .card .details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.card.active .details {
+    max-height: 500px; /* Adjust as needed */
+}
+
+footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 19px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            margin-top: 10px; /* Tambahkan margin atas untuk memberi jarak dengan konten lainnya */
+            z-index: 20; /* Pastikan footer berada di atas elemen lain */
+        }
+        ::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.cta button {
+            background-color: #474b47;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .cta button:hover {
+            background-color: #000000;
+        }
+    
+    </style>
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Event-Event Agama Kristen</h1>
+    </header>
+    <nav>
+        <a href="sejarah.html">Sejarah</a>
+        <a href="ajaran.html">Ajaran</a>
+        <a href="event.html">Event</a>
+    </nav>
+    <div class="container">
+        <div class="card" onclick="toggleDetails(this)">
+            <h3>Natal</h3>
+            <div class="details">
+                <p>Natal adalah hari di Tuhan Yesus Kristus dilahirkan. Umat Kristen merayakan Natal dengan ibadah khusus, dekorasi, dan pemberian hadiah. Perayaan Natal sering diadakan setiap tanggal 25 Desember, namun ada beberapa gereja yang merayakannya di tnggal yg berbeda
+                    Sejarah Natal dimulai jauh sebelum kelahiran Yesus Kristus. Pada masa awal Kekristenan, kelahiran Yesus tidak dirayakan. Baru pada abad ke-4, kelahiran Yesus ditetapkan sebagai hari raya. Paus Julius I memilih tanggal 25 Desember, yang diyakini untuk mengadopsi dan menyerap tradisi Festival Saturnalia yang dirayakan oleh orang Romawi.
+                    Natal memiliki makna yang mendalam bagi umat Kristen. Ini adalah waktu untuk merayakan kelahiran Yesus Kristus, yang diyakini sebagai Juru Selamat umat manusia. Natal juga merupakan waktu untuk berkumpul dengan keluarga, berbagi kasih, dan memberikan hadiah sebagai simbol kasih dan pengorbanan.
+                    <br>Beberapa tradisi Natal yang populer antara lain:
+                    <br>->Menghias Pohon Natal: Pohon Natal dihias dengan lampu, ornamen, dan bintang di puncaknya.
+                    <br>->Bertukar Hadiah: Tradisi ini melambangkan kasih dan pemberian.
+                    <br>->Santa Klaus: Kisah tentang Santa Klaus yang memberikan hadiah kepada anak-anak pada malam Natal.
+                    <br>->Ibadah Natal: Umat Kristen menghadiri ibadah khusus pada malam dan pagi Natal
+                </p>
+            </div>
+        </div>
+        <div class="card" onclick="toggleDetails(this)">
+            <h3>Paskah</h3>
+            <div class="details">
+                <p>Paskah adalah perayaan kebangkitan Yesus Kristus dari kematian pada hari ketiga setelah penyaliban-Nya. Perayaan ini merupakan salah satu hari raya terpenting dalam agama Kristen.
+                    Sejarah Paskah berakar dari tradisi Yahudi yang dikenal sebagai Pesakh atau Passover, yang memperingati pembebasan bangsa Israel dari perbudakan di Mesir. Dalam konteks Kristen, Paskah merujuk pada kebangkitan Yesus Kristus, yang dianggap sebagai penggenapan dari janji keselamatan12.
+                    Paskah memiliki makna yang sangat mendalam bagi umat Kristen. Ini adalah waktu untuk merayakan kemenangan Yesus Kristus atas dosa dan kematian, serta memberikan harapan baru bagi umat manusia. Kebangkitan Yesus dianggap sebagai bukti kasih Allah dan janji kehidupan kekal12.
+                    Beberapa tradisi Paskah yang populer antara lain:
+                    <br> Paskah: Umat Kristen menghadiri ibadah khusus pada hari Paskah untuk merayakan kebangkitan Yesus.
+                    <br>Telur Paskah: Telur Paskah melambangkan kehidupan baru dan kebangkitan. Tradisi ini sering melibatkan kegiatan berburu telur Paskah untuk anak-anak.
+                    <br>Lilin Paskah: Menyalakan lilin Paskah sebagai simbol terang Kristus yang mengalahkan kegelapan</p>
+            </div>
+        </div>
+        <div class="card" onclick="toggleDetails(this)">
+            <h3>Perayaan Pentakosta</h3>
+            <div class="details">
+                <p>Pentakosta adalah perayaan turunnya Roh Kudus atas para rasul. Perayaan ini biasanya diadakan 50 hari setelah Paskah. Seperti yang tercatat dalam Kitab Kisah Para Rasul (Kisah 2:1-31). Peristiwa ini terjadi 50 hari setelah Paskah.
+                    Pentakosta juga dikenal sebagai Minggu Putih atau Whitsunday di beberapa tradisi Kristen. Hari ini dianggap sebagai hari lahirnya gereja Kristen karena Roh Kudus memberikan kekuatan dan keberanian kepada para rasul untuk menyebarkan ajaran Yesus.
+                    Dalam tradisi Yahudi, Pentakosta dikenal sebagai Hari Raya Tujuh Minggu atau Shavuot, yang merayakan pemberian Taurat di Gunung Sinai.</p>
+            </div>
+        </div>
+        <div class="card" onclick="toggleDetails(this)">
+            <h3>Jumat Agung</h3>
+            <div class="details">
+                <p>Jumat Agung adalah hari peringatan penyaliban Yesus Kristus. Umat Kristen memperingati hari ini dengan ibadah dan refleksi. Hari ini jatuh pada hari Jumat sebelum Minggu Paskah dan merupakan bagian dari Tri Hari Suci Paskah.
+                    Pada Jumat Agung, umat Kristen mengenang penderitaan dan pengorbanan Yesus yang diyakini sebagai penebusan dosa umat manusia23. Perayaan ini biasanya melibatkan kebaktian khusus, doa, dan refleksi tentang makna salib.</p>
+            </div>
+        </div>
+    </div>
+    <div class="cta button">
+        <center>
+        <button onclick="navigateTo('tugas baru.html')">Kembali</button>
+        </center>
+    </div>
+    <footer>
+        <p>Ikuti kami juga di media sosial</p>
+        <a href="https://www.facebook.com/share/8sUVX6eJDBaYSwfy/?mibextid=qi2Omg" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/@_sabat.2_sola?is_from_webapp=1&sender_device=pc"target="_blank">Tiktok</a>
+        <a href="https://www.instagram.com/n_sabat.sn?igsh=cTIvb3MOazRjMzN5"target="_blank">Instagram</a>
+        <p>© 2024 SbT228i3. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleDetails(element) {
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajaran Agama Kristen</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Georgia';
+            background: linear-gradient(to right, #5c5b59, #ffffff);
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Menyembunyikan scrollbar horizontal */
+            overflow-y: auto;   /* Menampilkan scrollbar vertikal */
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+        .card h3 {
+            margin: 0;
+            padding: 10px 0;
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 19px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            margin-top: 10px; /* Tambahkan margin atas untuk memberi jarak dengan konten lainnya */
+            z-index: 20; /* Pastikan footer berada di atas elemen lain */
+        }
+        ::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+.cta button {
+            background-color: #474b47;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .cta button:hover {
+            background-color: #000000;
+        }
+    
+    </style>
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Ajaran Agama Kristen</h1>
+    </header>
+    <nav>
+        <a href="sejarah.html">Sejarah</a>
+        <a href="ajaran.html">Ajaran</a>
+        <a href="event.html">Event</a>
+    </nav>
+    <div class="container">
+        <div class="course-details">
+            <h3>Ajaran</h3>
+            <p>Agama Kristen adalah agama monoteis yang mengajarkan kasih dan pengampunan. Ajaran utama Kristen adalah kasih kepada Tuhan dan sesama manusia. Yesus Kristus adalah pusat dari ajaran ini, yang mengajarkan tentang kasih, pengampunan, dan keselamatan melalui iman kepada-Nya.</p>
+            <p>Kristen juga mengajarkan tentang Tritunggal, yaitu keyakinan bahwa Tuhan adalah satu tetapi terdiri dari tiga pribadi: Bapa, Anak (Yesus Kristus), dan Roh Kudus. Selain itu, ajaran Kristen mencakup konsep tentang dosa dan keselamatan, di mana manusia dianggap berdosa dan membutuhkan penebusan yang diberikan melalui kematian dan kebangkitan Yesus Kristus.</p>
+            <p>Alkitab adalah kitab suci umat Kristen yang terdiri dari Perjanjian Lama dan Perjanjian Baru. Alkitab digunakan sebagai pedoman hidup dan iman bagi umat Kristen. Sakramen seperti baptisan dan perjamuan kudus juga merupakan bagian penting dari praktik keagamaan Kristen.</p>
+            <div class="cta button">
+                <center>
+                <button onclick="navigateTo('tugas baru.html')">Kembali</button>
+                </center>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Ikuti kami juga di media sosial</p>
+        <a href="https://www.facebook.com/share/8sUVX6eJDBaYSwfy/?mibextid=qi2Omg" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/@_sabat.2_sola?is_from_webapp=1&sender_device=pc"target="_blank">Tiktok</a>
+        <a href="https://www.instagram.com/n_sabat.sn?igsh=cTIvb3MOazRjMzN5"target="_blank">Instagram</a>
+        <p>© 2024 SbT228i3. All rights reserved.</p>
+    </footer>
+</body>
+</html>
